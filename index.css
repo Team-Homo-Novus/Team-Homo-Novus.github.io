@@ -1,0 +1,108 @@
+@import "main.css";
+#scrollParent {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+.snappingpage {
+  height: 100vh;
+  scroll-snap-align: start;
+  background: linear-gradient(315deg, #45484d, #282c33);
+}
+.logocover {
+  background: #282c33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: transformer;
+  color: rgb(255, 215, 106);
+}
+.landingWrap {
+  text-align: center;
+}
+.scrollIndicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 5rem;
+  background: linear-gradient(
+    0deg,
+    rgba(122, 122, 122, 0.493) 0%,
+    rgba(217, 218, 219, 0) 100%
+  );
+  color: rgb(255, 215, 106);
+  font-weight: bolder;
+}
+.scrollDownIcon {
+  font-size: 38px;
+}
+.demo {
+  display: flex;
+}
+.imageBanner {
+  width: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projectInfo {
+  width: 65vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem;
+}
+.app-title {
+  font-family: transformer;
+  color: rgb(255, 215, 106);
+}
+.app-detail {
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 215, 106);
+  padding: 2rem;
+}
+.gold-button {
+  background-color: #ffffff00;
+  padding: 1rem;
+  color: rgb(255, 215, 106);
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+  border: rgb(255, 215, 106) solid 2px;
+  cursor: pointer;
+}
+.devcads {
+  color: rgb(255, 215, 106);
+  position: relative;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.devDetails {
+  position: absolute;
+  right: 0;
+  width: 16rem;
+  height: 10rem;
+  border: rgb(255, 215, 106) solid 2px;
+  padding: 1rem 1rem 1rem 5rem;
+  box-sizing: border-box;
+  border-radius: 0.2rem;
+}
+.avatar {
+    margin-top: 1rem;
+  position: absolute;
+  display: inline-block;
+  border-radius: 4rem;
+  height: 8rem;
+  width: 8rem;
+  z-index: 1;
+  background-size: cover;
+  border: rgb(255, 215, 106) solid 2px;
+}
