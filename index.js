@@ -1,7 +1,3 @@
-// hide scrollmore indicator on bottom.
-document.body.addEventListener("scroll", handleScroll);
+// hide scrollmore indicator
 
-function handleScroll() {
-  // do something on scroll
-  console.log('Hi');
-}
+
