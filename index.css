@@ -159,45 +159,7 @@ body::-webkit-scrollbar {
   border-color: rgb(255, 215, 106);
   transition:border-color 0.5s;
 }
-/* .contactform */
-/* .devcads {
-  color: rgb(255, 215, 106);
-  position: relative;
-  top: 0;
-  width: 20rem;
-  height: 16rem;
-  display: flex;
-  align-items: center;
-  justify-self: center;
-}
-.devDetails {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 16rem;
-  height: 10rem;
-  border: rgb(255, 215, 106) solid 2px;
-  padding: 1rem 1rem 1rem 5rem;
-  box-sizing: border-box;
-  border-radius: 0.2rem;
-}
-.avatar {
-  position: absolute;
-  display: inline-block;
-  top: 1rem;
-  border-radius: 4rem;
-  height: 8rem;
-  width: 8rem;
-  z-index: 1;
-  background-size: cover;
-  border: rgb(255, 215, 106) solid 2px;
-}
-.devs{
-  display: flex;
-  flex-direction: column;
-  width: 50vw;
-  height: 100vh;
-} */
+
 h1.gold {
   color: rgb(255, 215, 106);
   text-align: center;
