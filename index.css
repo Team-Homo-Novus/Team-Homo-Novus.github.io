@@ -120,6 +120,7 @@ body::-webkit-scrollbar {
 .avatar {
   position: absolute;
   display: inline-block;
+  left: 0%;
   top: 1rem;
   border-radius: 4rem;
   height: 8rem;
