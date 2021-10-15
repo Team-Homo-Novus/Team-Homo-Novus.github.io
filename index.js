@@ -30,7 +30,8 @@ window.onclick = function (event) {
 document.onscroll = function () {
   scrollIndicator = document.getElementsByClassName('scrollIndicator')[0];
   lenghtOfPage = document.getElementsByClassName('snappingpage').length-1;
-  if (window.innerHeight/2 + window.scrollY > lenghtOfPage * window.innerHeight) {
+  if (window.innerHeight + window.scrollY > lenghtOfPage * window.innerHeight) {
+    console.log('end');
     scrollIndicator.style.visibility = 'hidden';
   } else {
     scrollIndicator.style.visibility = 'visible';
