@@ -2,8 +2,7 @@
 #scrollParent {
   width: 100vw;
   height: 100vh;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+
 }
 body::-webkit-scrollbar {
   display: none;
