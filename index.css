@@ -2,8 +2,8 @@
 #scrollParent {
   width: 100vw;
   height: 100vh;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  /* scroll-snap-type: y mandatory;
+  overflow-y: scroll; */
 }
 body::-webkit-scrollbar {
   display: none;
@@ -89,15 +89,12 @@ body::-webkit-scrollbar {
   box-sizing: border-box;
   display: flex;
 }
-.devinfo,
 .formbox {
-  display: flex;
-  justify-content: center;
-  text-align: center;
   box-sizing: border-box;
-  width: 50vw;
-  height: 100vh;
-  padding: 3rem;
+  width: fit-content;
+  position: relative;
+  width: 100%;
+  padding: 0;
 }
 .cardWrap {
   color: #ceb76e;
@@ -139,33 +136,83 @@ body::-webkit-scrollbar {
   color: #ceb76e;
 }
 .contactform {
+  position: relative;
+  width: 100%;
+  height: 100%;
   text-align: center;
-  padding: 5%;
+  padding: 2rem;
   border: #ceb76e solid 2px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.contactform form input,
-textarea {
-  width: 90%;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  resize: vertical;
-  background: #00000000;
-  color: #fff;
-  outline: 0;
-  border-width: 0 0 2px;
-  border-color: #ffffff66;
-  transition: border-color 0.5s;
-}
-.contactform form input:focus,
-.contactform form textarea:focus {
-  border-color: #ceb76e;
-  transition: border-color 0.5s;
+  box-sizing: border-box;
 }
 
 h1.gold {
   color: #ceb76e;
   text-align: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow-y: scroll;
+}
+
+.modal-content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #282c33;
+  border: 1px solid #ceb76e;
+  padding: 1rem;
+  width: 80vw;
+  color: #ceb76e;
+  font-family: transformer;
+}
+span.close {
+  display: none;
+}
+
+.field-wrapper {
+  position: relative;
+
+  height: 25px;
+  margin: 0;
+}
+input,
+textarea {
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  border: #e4e4e4 solid 2px;
+  border-radius: 0.5rem;
+  background-color: #00000000;
+  box-sizing: border-box;
+  transition: all 300ms;
+  resize: vertical;
+}
+input:focus {
+  color: #ceb76e;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  border: #ceb76e solid 2px;
+  border-radius: 0.5rem;
+  background-color: #00000000;
+  outline: none;
+}
+
+textarea:focus {
+  border: #ceb76e solid 2px;
+  outline: none;
+}
+.feild-wrap div {
+  text-align: left;
+  padding: 0.2rem;
 }

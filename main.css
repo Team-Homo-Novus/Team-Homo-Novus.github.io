@@ -36,3 +36,7 @@ body{
     font-family: transformer;
     src: url(assets/TransformersMovie-y9Ad.ttf);
 }
+
+::placeholder{
+    color: #cecece;
+}
