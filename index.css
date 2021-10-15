@@ -2,8 +2,8 @@
 #scrollParent {
   width: 100vw;
   height: 100vh;
-  /* scroll-snap-type: y mandatory;
-  overflow-y: scroll; */
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -44,6 +44,7 @@ body::-webkit-scrollbar {
   );
   color: #ceb76e;
   font-weight: bolder;
+  transition: visibility 0.5s ;
 }
 .scrollDownIcon {
   font-size: 38px;

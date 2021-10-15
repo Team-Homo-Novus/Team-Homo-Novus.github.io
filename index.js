@@ -11,18 +11,28 @@ var btn = document.getElementsByClassName("gold-button")[0];
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
+btn.onclick = function () {
   modal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function () {
   modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
+  }
+}
+
+document.onscroll = function () {
+  scrollIndicator = document.getElementsByClassName('scrollIndicator')[0];
+  lenghtOfPage = document.getElementsByClassName('snappingpage').length-1;
+  if (window.innerHeight/2 + window.scrollY > lenghtOfPage * window.innerHeight) {
+    scrollIndicator.style.visibility = 'hidden';
+  } else {
+    scrollIndicator.style.visibility = 'visible';
   }
 }
