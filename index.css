@@ -2,7 +2,6 @@
 #scrollParent {
   width: 100vw;
   height: 100vh;
-
 }
 body::-webkit-scrollbar {
   display: none;
@@ -43,7 +42,7 @@ body::-webkit-scrollbar {
   );
   color: #ceb76e;
   font-weight: bolder;
-  transition: visibility 0.5s ;
+  transition: visibility 0.5s;
 }
 .scrollDownIcon {
   font-size: 38px;
@@ -127,6 +126,8 @@ body::-webkit-scrollbar {
   border: #ceb76e solid 2px;
 }
 .devinfo {
+  height: 100vh;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,8 +138,8 @@ body::-webkit-scrollbar {
 }
 .contactform {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   text-align: center;
   padding: 2rem;
   border: #ceb76e solid 2px;
@@ -215,4 +216,20 @@ textarea:focus {
 .feild-wrap div {
   text-align: left;
   padding: 0.2rem;
+}
+
+.contact-form {
+  display: flex;
+  width: 50%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+label{
+  color: #ceb76e;
+}
+
+textarea, input{
+  color: #ceb76e;
 }
