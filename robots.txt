@@ -16,5 +16,5 @@ User-agent: yahoo-blogs/v3.9
 Allow: 
 User-agent: *
 Allow: 
-Disallow: /cgi-bin/
+Allow: /cgi-bin/
 Sitemap: https://homonovus.in/
