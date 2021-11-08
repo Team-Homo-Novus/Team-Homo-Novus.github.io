@@ -1,2 +1,2 @@
 # Team-Homo-Novus.github.io
-Organization description repo
+This is website of the organization.
